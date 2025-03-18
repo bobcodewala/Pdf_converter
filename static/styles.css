@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +11,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
     background-image: url(https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    background-color: rgba(128, 128, 128, 0.562);
+    background-color: rgba(128, 128, 128, 0.7);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    height: 40vh;
-    width: 50vw;
+    width: 90%;
+    max-width: 500px;
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 header {
@@ -33,7 +36,7 @@ header {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 22px;
     color: black;
 }
 
@@ -41,25 +44,28 @@ h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     border: 1px dashed #fcf9f9;
-
+    padding: 1rem;
+    width: 100%;
 }
 
 #fileInput {
-    margin: 10px 0;
+    width: 100%;
     font-size: 16px;
-    /* position: relative;
-    left: 10vw; */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    padding: 0.5rem 1.5rem;
+    width: 100%;
+    padding: 0.75rem;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
+    margin-top: 10px;
 }
 
 button:hover {
@@ -68,6 +74,7 @@ button:hover {
 
 .file-list {
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .file-list ul {
@@ -84,4 +91,21 @@ button:hover {
 
 .convert-section {
     text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    button {
+        padding: 0.6rem;
+    }
 }
