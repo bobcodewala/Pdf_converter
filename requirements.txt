@@ -3,3 +3,4 @@ Pillow
 reportlab
 python-pptx
 python-docx
+pytest
