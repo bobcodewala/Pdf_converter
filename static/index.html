@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File & Image to PDF Converter</title>
+    <!-- Correct path to the CSS file -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File & Image to PDF Converter</h1>
+        </header>
+        <section class="upload-section">
+            <input type="file" id="fileInput" multiple /> 
+            <button id="uploadButton">Upload Files</button>
+        </section>
+        <section id="fileList" class="file-list">
+            <!-- List of files will be displayed here -->
+        </section>
+        <section class="convert-section">
+            <button id="convertButton">Convert to PDF</button>
+        </section>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.container {
+    background-color: rgba(128, 128, 128, 0.562);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    height: 40vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.upload-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border: 1px dashed #fcf9f9;
+
+}
+
+#fileInput {
+    margin: 10px 0;
+    font-size: 16px;
+    /* position: relative;
+    left: 10vw; */
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.file-list {
+    margin-bottom: 1.5rem;
+}
+
+.file-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.file-list li {
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.convert-section {
+    text-align: center;
+}
